@@ -1,4 +1,4 @@
-# MCP Server Registry
+# MCPverse
 
 ## What is this?
 
@@ -19,9 +19,9 @@ It provides a central, simple list (`mcp-registry.json`) of quality MCP servers 
 ## Install via npm
 
 ```bash
-npm install mcp-registery 
+npm install mcpverse 
 # or
-yarn add mcp-registery
+yarn add mcpverse
 ```
 
 ## How to Use (JavaScript / Node.js)
@@ -30,7 +30,7 @@ Once installed via npm, you can require the registry in your code:
 
 ```javascript
 // Import the registry functions
-const mcpRegistry = require('mcp-registery'); 
+const mcpRegistry = require('mcpverse'); 
 
 // --- Example 1: List all available MCP server names ---
 const allMcps = mcpRegistry.listMcps();

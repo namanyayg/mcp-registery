@@ -1,5 +1,5 @@
 {
-  "name": "mcp-registery",
+  "name": "mcpverse",
   "version": "0.1.0",
   "description": "Find and configure Model Context Protocol (MCP) servers easily.",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/namanyayg/mcp-registery.git"
+    "url": "git+https://github.com/namanyayg/mcpverse.git"
   },
   "keywords": [
     "mcp",
@@ -23,9 +23,9 @@
   "author": "Namanyay Goel <mail@namanyayg.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/namanyayg/mcp-registery/issues"
+    "url": "https://github.com/namanyayg/mcpverse/issues"
   },
-  "homepage": "https://github.com/namanyayg/mcp-registery#readme",
+  "homepage": "https://github.com/namanyayg/mcpverse#readme",
   "files": [
     "index.js",
     "mcp-registry.json",
