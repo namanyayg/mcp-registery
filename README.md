@@ -4,7 +4,7 @@
 
 Finding setup instructions and configuration details (like environment variables) for different Model Context Protocol (MCP) servers can be difficult. This project solves that.
 
-It provides a central, simple list (`mcp-registry.json`) of quality MCP servers with:
+It provides a central, simple list (`mcpverse.json`) of quality MCP servers with:
 
 *   Easy-to-find setup instructions.
 *   Clear information on required variables.
@@ -12,7 +12,7 @@ It provides a central, simple list (`mcp-registry.json`) of quality MCP servers 
 
 ## Features
 
-*   **Simple Data:** Server info is stored in `mcp-registry.json`.
+*   **Simple Data:** Server info is stored in `mcpverse.json`.
 *   **Web Page:** Open `index.html` locally to browse servers.
 *   **NPM Package:** Use the data in your JavaScript/Node.js projects.
 
@@ -30,10 +30,10 @@ Once installed via npm, you can require the registry in your code:
 
 ```javascript
 // Import the registry functions
-const mcpRegistry = require('mcpverse'); 
+const mcpverse = require('mcpverse'); 
 
 // --- Example 1: List all available MCP server names ---
-const allMcps = mcpRegistry.listMcps();
+const allMcps = mcpverse.listMcps();
 console.log("Available MCPs:");
 allMcps.forEach(mcp => console.log(`- ${mcp.name} (ID: ${mcp.id})`));
 // Output:
@@ -44,13 +44,13 @@ allMcps.forEach(mcp => console.log(`- ${mcp.name} (ID: ${mcp.id})`));
 // - Supabase MCP Server (ID: supabase)
 
 // --- Example 2: Get full details for a specific MCP ---
-const puppeteerDetails = mcpRegistry.getMcp('puppeteer');
+const puppeteerDetails = mcpverse.getMcp('puppeteer');
 if (puppeteerDetails) {
     console.log("\nPuppeteer Details:", JSON.stringify(puppeteerDetails, null, 2));
 }
 
 // --- Example 3: Get required variables for Slack ---
-const slackInfo = mcpRegistry.getInstallationInfo('slack');
+const slackInfo = mcpverse.getInstallationInfo('slack');
 if (slackInfo && slackInfo.variables) {
     console.log("\nSlack requires the following variables:");
     for (const [varName, details] of Object.entries(slackInfo.variables)) {
@@ -68,7 +68,7 @@ if (slackInfo && slackInfo.variables) {
 // Imagine you have your token in an environment variable
 const myToken = process.env.SUPABASE_ACCESS_TOKEN || 'your-token-placeholder';
 
-const supabaseCommand = mcpRegistry.generateFullCommand('supabase', { 
+const supabaseCommand = mcpverse.generateFullCommand('supabase', { 
     SUPABASE_ACCESS_TOKEN: myToken 
 });
 
@@ -86,9 +86,9 @@ See `index.js` for all available functions.
 
 ## Web Interface
 
-If you clone this repository, you can open the `index.html` file directly in your web browser. It loads data from `mcp-registry.json` and shows a card for each server with its details, install command, and required variables.
+If you clone this repository, you can open the `index.html` file directly in your web browser. It loads data from `mcpverse.json` and shows a card for each server with its details, install command, and required variables.
 
-## Data Format (`mcp-registry.json`)
+## Data Format (`mcpverse.json`)
 
 The registry is a JSON object. Each key is a server ID (like `"prisma"`). The value is an object describing the server:
 
@@ -123,7 +123,7 @@ The registry is a JSON object. Each key is a server ID (like `"prisma"`). The va
 Want to add or update a server?
 
 1.  **Fork** this repository.
-2.  **Edit** `mcp-registry.json` (add/update an entry, follow the format).
+2.  **Edit** `mcpverse.json` (add/update an entry, follow the format).
 3.  **Create a Pull Request**.
 
 Please ensure added servers are stable and have good documentation. 

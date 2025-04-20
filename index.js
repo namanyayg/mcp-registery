@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const REGISTRY_PATH = path.join(__dirname, 'mcp-registry.json');
+const REGISTRY_PATH = path.join(__dirname, 'mcpverse.json');
 
 let registryData = null;
 

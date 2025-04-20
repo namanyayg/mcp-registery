@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCP Server Registry</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MCPverse - MCP Server Registry</title>
+    <!-- Link to Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css"> <-- Remove old stylesheet -->
+    <style type="text/tailwindcss">
+        /* Customizations or @apply directives can go here if needed */
+        body {
+            @apply bg-gray-100 text-gray-800;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>MCP Server Registry</h1>
-        <p>A central registry for discovering and configuring MCP servers.</p>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6 text-center">
+            <h1 class="text-3xl font-bold">MCPverse</h1>
+            <p class="text-lg text-indigo-100">A central registry for discovering and configuring MCP servers.</p>
+        </div>
     </header>
-    <main id="mcp-list-container">
+
+    <main class="container mx-auto px-4 py-8 flex-grow max-w-screen-lg" id="mcp-list-container">
         <!-- MCP cards will be dynamically inserted here -->
-        <p>Loading MCP registry...</p>
+        <p class="text-center text-gray-500 text-lg">Loading MCPverse...</p>
     </main>
-    <footer>
-        <p>Managed by the MCP Registry Project</p>
+
+    <footer class="bg-gray-800 text-gray-300 text-center py-4 mt-8">
+        <p>&copy; 2025 MCPverse. Managed by the community.</p>
+        <p><a href="https://github.com/namanyayg/mcpverse" class="hover:text-white underline">GitHub</a></p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html> 

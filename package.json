@@ -1,6 +1,6 @@
 {
   "name": "mcpverse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find and configure Model Context Protocol (MCP) servers easily.",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/namanyayg/mcpverse#readme",
   "files": [
     "index.js",
-    "mcp-registry.json",
+    "mcpverse.json",
     "README.md",
     "LICENSE" 
   ]
