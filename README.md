@@ -92,7 +92,7 @@ If you clone this repository, you can open the `index.html` file directly in you
 
 The registry is a JSON object. Each key is a server ID (like `"prisma"`). The value is an object describing the server:
 
-```json
+```js
 {
   "id": "string",         // Unique ID (same as key)
   "name": "string",       // Display name
