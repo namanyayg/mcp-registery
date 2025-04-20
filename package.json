@@ -1,0 +1,35 @@
+{
+  "name": "mcp-registery",
+  "version": "0.1.0",
+  "description": "Find and configure Model Context Protocol (MCP) servers easily.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "",
+    "version": "git add -A package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namanyayg/mcp-registery.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "registry",
+    "ai",
+    "llm",
+    "server"
+  ],
+  "author": "Namanyay Goel <mail@namanyayg.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/namanyayg/mcp-registery/issues"
+  },
+  "homepage": "https://github.com/namanyayg/mcp-registery#readme",
+  "files": [
+    "index.js",
+    "mcp-registry.json",
+    "README.md",
+    "LICENSE" 
+  ]
+} 

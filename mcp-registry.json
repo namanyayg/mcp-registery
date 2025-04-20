@@ -1,0 +1,96 @@
+{
+  "prisma": {
+    "name": "Prisma MCP Server",
+    "id": "prisma",
+    "description": "MCP server for interacting with Prisma databases.",
+    "official": true,
+    "category": "Database",
+    "readmeUrl": "https://www.prisma.io/docs/postgres/mcp-server",
+    "brand": {
+      "logoUrl": null
+    },
+    "installation": {
+      "type": "npx",
+      "command": "npx",
+      "args": ["-y", "prisma", "mcp"],
+      "variables": {}
+    }
+  },
+  "supabase": {
+    "name": "Supabase MCP Server",
+    "id": "supabase",
+    "description": "MCP server provided by Supabase.",
+    "official": true,
+    "category": "Backend-as-a-Service",
+    "readmeUrl": "https://supabase.com/docs/guides/getting-started/mcp?queryGroups=os&os=mac",
+    "brand": {
+      "logoUrl": null
+    },
+    "installation": {
+      "type": "npx",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "<SUPABASE_ACCESS_TOKEN>"
+      ],
+      "variables": {
+        "SUPABASE_ACCESS_TOKEN": {
+          "description": "Your Supabase personal access token.",
+          "secret": true
+        }
+      }
+    }
+  },
+  "puppeteer": {
+    "name": "Puppeteer MCP Server",
+    "id": "puppeteer",
+    "description": "MCP server for browser automation using Puppeteer.",
+    "official": true,
+    "category": "Browser Automation",
+    "readmeUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+     "brand": {
+      "logoUrl": null
+    },
+    "installation": {
+      "type": "npx",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+       "variables": {}
+    }
+  },
+  "slack": {
+    "name": "Slack MCP Server",
+    "id": "slack",
+    "description": "MCP server for interacting with Slack.",
+    "official": true,
+    "category": "Communication",
+    "readmeUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+     "brand": {
+      "logoUrl": null
+    },
+    "installation": {
+      "type": "npx",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "variables": {
+        "SLACK_BOT_TOKEN": {
+          "description": "Your Slack bot token (starts with xoxb-).",
+          "secret": true,
+          "placeholder": "xoxb-your-bot-token"
+        },
+        "SLACK_TEAM_ID": {
+          "description": "Your Slack workspace Team ID (starts with T).",
+          "secret": false,
+           "placeholder": "T01234567"
+        },
+        "SLACK_CHANNEL_IDS": {
+          "description": "Comma-separated list of Slack channel IDs to monitor.",
+          "secret": false,
+          "placeholder": "C01234567,C76543210"
+        }
+      }
+    }
+  }
+} 

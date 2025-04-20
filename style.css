@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #ddd;
+    color: #333;
+}
+
+.mcp-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mcp-card h2 {
+    margin-top: 0;
+    color: #0056b3; /* A slightly different color for headings */
+}
+
+.mcp-card .meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.mcp-card .meta span {
+    margin-right: 1rem;
+    display: inline-block; /* Ensures spacing works */
+    padding: 0.2em 0.5em;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.mcp-card .meta .official {
+    background-color: #d4edda; /* Light green for official */
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.mcp-card h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3rem;
+}
+
+.mcp-card code {
+    background-color: #eef;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: monospace;
+    word-break: break-all; /* Prevent long commands from overflowing */
+}
+
+.mcp-card pre {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto; /* Allow horizontal scroll for long commands */
+}
+
+.mcp-card pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+.mcp-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mcp-card li {
+    margin-bottom: 0.5rem;
+}
+
+.mcp-card li strong {
+    display: inline-block;
+    min-width: 100px; /* Align descriptions a bit */
+}
+
+.mcp-card a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.mcp-card a:hover {
+    text-decoration: underline;
+} 
